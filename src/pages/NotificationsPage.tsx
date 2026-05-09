@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Bell, CheckCheck, Trash2, AlertCircle, Info, CheckCircle, XCircle, Clock, Send } from 'lucide-react';
-import { useAppStore } from '../../store/useAppStore';
-import { requestNotificationPermission, sendNotification } from '../../services/notifications';
-import { Notification } from '../../types';
+import { useAppStore } from '../store/useAppStore';
+import { requestNotificationPermission, sendNotification } from '../services/notifications';
+import type { Notification } from '../types';
 
 const iconMap = {
   error: XCircle,

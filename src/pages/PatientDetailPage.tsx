@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Phone, Mail, MapPin, Heart, Thermometer, Droplets, Activity, Pill, FileText, User, Shield, ChevronRight } from 'lucide-react';
-import { useAppStore } from '../../store/useAppStore';
+import { useAppStore } from '../store/useAppStore';
 
 const VitalCard: React.FC<{ label: string; value: string; unit: string; icon: React.ElementType; color: string; normal?: string }> =
   ({ label, value, unit, icon: Icon, color, normal }) => (

@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Grid, List, Search, Filter, Phone, Mail, Calendar, Heart } from 'lucide-react';
-import { useAppStore } from '../../store/useAppStore';
-import { Patient } from '../../types';
+import { useAppStore } from '../store/useAppStore';
+import { Patient } from '../types';
 
 const statusColors: Record<string, string> = {
   Active: 'var(--accent-emerald)',

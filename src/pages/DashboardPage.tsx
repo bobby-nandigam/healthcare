@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Users, Activity, Calendar, AlertTriangle, TrendingUp, TrendingDown, ArrowRight, Heart, Thermometer, Droplets } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { useAppStore } from '../../store/useAppStore';
-import { mockAnalytics } from '../../services/mockData';
-import { scheduleLocalNotification } from '../../services/notifications';
+import { useAppStore } from '../store/useAppStore';
+import { mockAnalytics } from '../services/mockData';
+import { scheduleLocalNotification } from '../services/notifications';
 
 const StatCard: React.FC<{
   title: string; value: string | number; subtitle: string;

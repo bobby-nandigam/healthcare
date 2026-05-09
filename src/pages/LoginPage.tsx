@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { auth, signInWithEmailAndPassword, signInWithPopup, googleProvider } from '../../services/firebase';
-import { useAppStore } from '../../store/useAppStore';
+import { auth, signInWithEmailAndPassword, signInWithPopup, googleProvider } from '../services/firebase';
+import { useAppStore } from '../store/useAppStore';
 import { Activity, Eye, EyeOff, Shield, Lock, Mail, AlertCircle, Chrome } from 'lucide-react';
 
 const LoginPage: React.FC = () => {

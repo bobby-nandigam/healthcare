@@ -5,8 +5,8 @@ import {
   Tooltip, ResponsiveContainer, Legend
 } from 'recharts';
 import { TrendingUp, DollarSign, Users, Activity } from 'lucide-react';
-import { mockAnalytics } from '../../services/mockData';
-import { useAppStore } from '../../store/useAppStore';
+import { mockAnalytics } from '../services/mockData';
+import { useAppStore } from '../store/useAppStore';
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (!active || !payload?.length) return null;
